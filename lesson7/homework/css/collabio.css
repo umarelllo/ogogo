@@ -1,0 +1,318 @@
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav {
+    font-size: 17px;
+    text-transform: none;
+    display: flex;
+}
+
+.nav__link {
+    color: #222222;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 30px;
+    transition: color 0.2s linear;
+}
+
+.nav__link:first-child {
+    margin-left: 0;
+}
+
+.nav__link:last-child {
+    margin-right: 0;
+}
+
+.nav__link:hover {
+    color: #3F53D8;
+}
+
+.shop {
+    display: flex;
+    justify-content: flex-end;       
+}
+
+.frame {
+    position: relative;
+    top: 17px;
+    right: -20px;
+}
+
+.cart {
+    color: #222222;
+    text-transform: none;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: top5;
+    transition: color 0.2s linear;
+    position: relative;
+    top: 15px;
+    right: -25px;
+}
+
+.cart:hover {
+    color: #3F53D8;
+}
+
+.zero {
+    font-size: 11px;
+    line-height: 18px;
+    color: #3F53D8;
+    margin: 0 27px 0 14px;
+    position: relative;
+    top: 22px;
+    right: -30px;
+}
+
+.btn {
+    border: 1px solid rgba(8, 8, 41, 0.2);
+    border-radius: 14px;
+    background: white;
+    height: 61px;
+    width: 219px;
+    position: relative;
+    left: 30px;
+    top: 0px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.sign {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.4px;
+    color: #080829;
+    transition: color 0.2s linear;
+}
+
+.sign:hover {
+    color: #3F53D8;
+}
+
+.h1 {
+    font-weight: 400;
+    font-size: 63px;
+    letter-spacing: 2.16px;
+
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 100px 0;
+}
+
+.block-1 {
+    position: relative;
+    right: -100px;
+    top: 100px;
+}
+
+.block-2 {
+    position: relative;
+    right: -500px;
+    top: -90px;
+}
+
+
+.stop {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    letter-spacing: 0.36px;
+    width: 495px;
+    height: 87px;
+}
+
+.start-btn {
+    height: 59px;
+    width: 240px;
+    background: #3F53D8;
+    border-radius: 14px;
+    border: none;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.4px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.arrow {
+    position: relative;
+    top: 50px;
+    right: -40px;
+    margin: 0;
+    width: 181px;
+    height: 105px;
+}
+
+.pinkman {
+    width: 90px;
+    height: 90px;
+    position: relative;
+    top: -250px;
+    right: -120px;
+}
+
+.blueman {
+    width: 90px;
+    height: 90px;
+    position: relative;
+    top: -120px;
+    right: 280px;
+}
+
+.user {
+    width: 319px;
+    height: 155px;
+    position: relative;
+    right: 280px;
+    top: 170px;
+}
+
+.fundament {
+    width: 440px;
+    height: 382px;
+    position: absolute;
+    top: 200px;
+    right: 80px;
+}
+
+.structure {
+    width: 228px;
+    height: 401px;
+    position: relative;
+    top: 340px;
+    right: -90px;
+}
+
+.krug {
+    width: 16px;
+    height: 16px;
+    border: 2px solid none;
+    border-radius: 50%;
+    background: #A259FF;
+    position: relative;
+    top: 125px;
+    right: 300px;
+}
+
+.h4-logos {
+    position: relative;
+    top: 150px
+}
+
+.h4 {
+    display: flex;
+    justify-content: center;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 20px;
+}
+
+.h2 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 400px;
+    font-weight: 400;
+    font-size: 43px;
+    line-height: 56px;
+    text-align: center; 
+    letter-spacing: 1.44px;
+}
+
+.transform {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: 0.36px;
+    color: #545479;
+    width: 554px;
+    height: 58px;
+    position: relative;
+    top: 400px;
+    right: -300px;
+}
+
+.icon_theme {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.icon {
+    margin: 0 0 150px 0;
+
+}
+
+.word {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+    letter-spacing: 0.02px;
+    color: #080829; 
+}
+
+.iconsword {
+    position: relative;
+    top: 500px;
+    right: -10px;
+}
+
