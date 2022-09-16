@@ -1,0 +1,93 @@
+@import '/src/scss/components/variables.scss';
+
+.header {
+    background-color: $headerBackground;
+    padding: 3px 0;
+    &-container {
+        max-width: $mainMaxWidth-1140;
+        width: 100%;
+        margin: 0 auto;
+        .header-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            @media all and ( max-width: $mainMaxWidth-1140) {
+                width: calc(100%-100px);
+                margin: 0 auto;
+            }
+            @media all and ( max-width: $mainMaxWidth-992) {
+                display: none;
+            }
+            .header-list {
+                @media all and ( max-width: $mainMaxWidth-1140) {
+                    @include flex(34px);
+                }
+                display: flex;
+                align-items: center;
+                gap: 35px;
+                &-item {
+                    color: white;
+                }
+            }
+            .header-auth {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                 img {
+                    width: 16px;
+                    height: 34px;
+                }
+            }
+        }
+        .menu {
+            width: 720px;
+            margin: 0 auto;
+            @include flex(_, space-between);
+            .burger {
+                cursor: pointer;
+                .line {
+                    @include wh(20px, 1px);
+                    border-top: 1px solid white;
+                    margin: 10px 0;
+                }
+            }
+            .menu-logo {
+                img {
+                    @include wh(80px, 32px);
+                    }
+            }
+            .icon {
+                width: 70px;
+                position: relative;
+                @include flex_(_, space-between);
+                .img {
+                    @include wh(25px, 25px);
+                }
+                .p {
+                    background: $activeElement;
+                    position: absolute;
+                    border-radius: 10px;
+                    font-size: 8px;
+                    color: $navItemTextColor;
+                    bottom: 0;
+                    right: 0;
+                    @include wh(12px, 12px);
+                    text-align: center;
+                    padding: 3px 1px 1px 1px;
+                }
+            }
+        }
+    }
+    a {
+        color: $navItemTextColor;
+        font-size: 0.938rem;
+    }
+}
+
+
+.active {
+    color: $activeTextColor !important;
+    transition: .6s;
+}
+
