@@ -1,0 +1,147 @@
+@import "/src/css/variables.css";
+
+body {
+    background-color: var(--main-bg-color);
+}
+
+.wrapper {
+    max-width: var(--main-width-wrapper);
+    margin: 0 auto;
+}
+
+.header {
+    padding: 43px 0; 
+    box-shadow: 0px 10px 30px 4px rgba(85, 105, 135, 0.03);
+    margin-bottom: 166px;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo {
+    display: block;
+}
+
+.header-items {
+    display: flex;
+    gap: 41px;
+    align-items: center;
+}
+
+.header-items ul {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.header-settings {
+    display: flex;
+    gap: 34px;
+}
+.header-settings li:hover {
+    transform: translateY(-5px);
+}
+
+.header-settings li {
+    transition: 0.2s;
+}
+
+/*SubTitle*/
+
+.subtitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 85px;
+}
+
+.subtitle--title {
+    font-weight: 400;
+    font-size: 50px;
+    letter-spacing: -0.02em;
+}
+
+.subtitle--price {
+    font-weight: 400;
+    font-size: 50px;
+    letter-spacing: -0.02em;
+}
+
+.filters {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.filters-items {
+    border: none;
+    outline: none;
+    max-width: 258px;
+    width: 100%;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.filters-items option {
+
+}
+
+.card {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card-item img {
+    max-width: 315px;
+
+}
+.card-info {
+    display: flex;
+    gap: 10px;
+    margin-top: 18px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.card-author span {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+.card-author p {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.pagination-items button {
+    padding: 18px 21px;
+    cursor: pointer;
+    border: 1px solid #dfdfdf;
+    background: transparent;
+    font-weight: 400;
+    text-align: center;
+    transition: 0.6s;
+}
+
+.pagination-items button:hover {
+    background: #000;
+    color: #fff;
+}
+
+.pagination-info {
+    font-weight: 400;
+    font-size: 18px;
+    color: gray;
+}
